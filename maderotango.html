@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madero Tango · Plan operativo (interno)</title>
+  <style>
+    :root{--bg:#0b1020;--card:#ffffff;--text:#e8ecf8;--muted:#aab4d3;--accent:#6ee7b7;--accent-2:#8ab4ff;--shadow:0 12px 32px rgba(0,0,0,.22);--radius:18px;--max:1180px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b1020 0%,#0d1326 100%);color:var(--text)}
+    .container{max-width:var(--max);margin:0 auto;padding:24px}
+    .nav{position:sticky;top:0;z-index:5;background:rgba(11,16,32,.85);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-inner{max-width:var(--max);margin:0 auto;padding:10px 24px;display:flex;gap:8px;flex-wrap:wrap}
+    .nav a{color:var(--text);text-decoration:none;font-size:13px;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+    h1{margin:10px 0 6px;font-size:36px;letter-spacing:-.03em}
+    h2{margin:0;font-size:26px;letter-spacing:-.02em}
+    p{margin:6px 0;color:var(--muted);line-height:1.5}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:#fff;color:#14213d;border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+    .card.dark{background:#0f1730;color:var(--text);border:1px solid rgba(255,255,255,.08)}
+    .tag{display:inline-block;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:700;margin-bottom:6px}
+    .blue{background:rgba(59,130,246,.15);color:#2563eb}.green{background:rgba(16,185,129,.15);color:#059669}.amber{background:rgba(245,158,11,.18);color:#b45309}.red{background:rgba(239,68,68,.15);color:#b91c1c}
+    ul{margin:8px 0 0 16px} li{margin:6px 0}
+    section{padding:22px 0}
+    .table{width:100%;border-collapse:collapse;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden}
+    th,td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left}
+    th{font-size:12px;text-transform:uppercase;color:var(--muted)}
+    .footer{color:var(--muted);font-size:13px;margin-top:16px}
+    @media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr} h1{font-size:30px}}
+  </style>
+</head>
+<body>
+  <div class="nav"><div class="nav-inner">
+    <a href="#lectura">Lectura real</a>
+    <a href="#decisiones">Decisiones</a>
+    <a href="#show">Cena Show</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#kosher">Kosher</a>
+    <a href="#paid">Paid</a>
+    <a href="#todo">TO-DO</a>
+  </div></div>
+
+  <main class="container">
+    <header>
+      <h1>Madero Tango · Plan operativo (sin humo)</h1>
+      <p>Base: reunión kickoff. Enfoque: decisiones + ejecución. Prioridad: ordenar y vender mejor, no “hacer marketing”.</p>
+    </header>
+
+    <section id="lectura">
+      <h2>1. Lectura real del negocio</h2>
+      <div class="grid-3">
+        <div class="card"><span class="tag blue">VENTA</span><ul>
+          <li>80% cena show via agencias (≈40% fee).</li>
+          <li>Directo existe, pero subdesarrollado.</li>
+          <li>WhatsApp = canal central (no CRM).</li>
+        </ul></div>
+        <div class="card"><span class="tag amber">MARKETING</span><ul>
+          <li>Cuentas y marcas desordenadas.</li>
+          <li>Pauta poco clara (herencia agencia anterior).</li>
+          <li>Contenido mezclado → baja claridad.</li>
+        </ul></div>
+        <div class="card"><span class="tag red">RIESGO</span><ul>
+          <li>Kosher sensible (religión + confianza).</li>
+          <li>Contenido actual puede expulsar.</li>
+          <li>Dependencia fuerte de terceros.</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="decisiones">
+      <h2>2. Decisiones (claras)</h2>
+      <div class="grid-2">
+        <div class="card dark"><ul>
+          <li>Separar comunicación por unidad (no mezclar).</li>
+          <li>Kosher debe aislarse progresivamente.</li>
+          <li>Mantener marca madre como respaldo.</li>
+          <li>No competir contra agencias → ampliar mercado.</li>
+        </ul></div>
+        <div class="card"><ul>
+          <li>Foco inmediato: Cena Show (volumen + margen).</li>
+          <li>Eventos = precisión (no volumen masivo).</li>
+          <li>Brasil = defender liderazgo.</li>
+          <li>Europa/Asia = crecimiento.</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="show">
+      <h2>3. Cena Show (core negocio)</h2>
+      <table class="table">
+        <tr><th>Problema</th><th>Acción</th></tr>
+        <tr><td>Dependencia agencias</td><td>Crear canal directo paralelo (web + WhatsApp)</td></tr>
+        <tr><td>Compra fácil en OTA</td><td>Mejorar UX y oferta directa</td></tr>
+        <tr><td>Poca diferenciación</td><td>Mostrar experiencia real (video + prueba social)</td></tr>
+      </table>
+      <p><b>Clave:</b> no sacar clientes a agencias → captar nuevos antes del viaje.</p>
+    </section>
+
+    <section id="eventos">
+      <h2>4. Eventos</h2>
+      <div class="grid-2">
+        <div class="card"><ul>
+          <li>Venta consultiva (no inmediata).</li>
+          <li>Necesita contenido de casos reales.</li>
+          <li>Segmentar: corporate / social / kosher.</li>
+        </ul></div>
+        <div class="card dark"><ul>
+          <li>No mezclar con Cena Show.</li>
+          <li>No comunicar todo junto.</li>
+          <li>Orden visual en redes (urgente).</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="kosher">
+      <h2>5. Kosher</h2>
+      <div class="grid-2">
+        <div class="card"><span class="tag red">HECHO</span><ul>
+          <li>Compra por confianza + comunidad.</li>
+          <li>WhatsApp y referidos dominan.</li>
+          <li>Restricciones culturales fuertes.</li>
+        </ul></div>
+        <div class="card"><span class="tag green">ACCIÓN</span><ul>
+          <li>Crear identidad separada (progresiva).</li>
+          <li>Contenido: rabino + validación.</li>
+          <li>NO mezclar con show (crítico).</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section id="paid">
+      <h2>6. Paid Media</h2>
+      <table class="table">
+        <tr><th>Canal</th><th>Uso</th></tr>
+        <tr><td>Google Ads</td><td>Captura directa (alta prioridad)</td></tr>
+        <tr><td>Meta</td><td>Awareness + remarketing</td></tr>
+        <tr><td>LinkedIn</td><td>Eventos (testear)</td></tr>
+        <tr><td>Facebook</td><td>Comunidades (Kosher)</td></tr>
+      </table>
+      <p><b>Urgente:</b> auditar qué está corriendo hoy.</p>
+    </section>
+
+    <section id="todo">
+      <h2>7. TO-DO (APB · concreto)</h2>
+      <div class="grid-2">
+        <div class="card dark">
+          <h3>Cliente</h3>
+          <ul>
+            <li>Dar accesos completos (Meta + Google Ads).</li>
+            <li>Compartir bases de WhatsApp.</li>
+            <li>Confirmar fechas clave (Brasil, feriados).</li>
+            <li>Coordinar días de filmación (antes fin de abril).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Onlife</h3>
+          <ul>
+            <li>Auditoría de cuentas (24–48h).</li>
+            <li>Definir estructura de campañas.</li>
+            <li>Propuesta de separación de redes.</li>
+            <li>Plan de contenidos por unidad.</li>
+            <li>Plan de pauta inicial (con presupuesto).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Contenido (prioridad alta)</h3>
+        <ul>
+          <li>Filmar: salones + cena show + backstage.</li>
+          <li>Generar piezas para China (deadline corto).</li>
+          <li>Actualizar banco visual completo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">Documento interno. Versión operativa basada en kickoff.</div>
+  </main>
+</body>
+</html>
