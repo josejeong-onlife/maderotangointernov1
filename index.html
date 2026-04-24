@@ -3,179 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Madero Tango · Plan operativo (interno)</title>
+  <title>Madero Tango · Propuesta de Comunicación</title>
   <style>
-    :root{--bg:#0b1020;--card:#ffffff;--text:#e8ecf8;--muted:#aab4d3;--accent:#6ee7b7;--accent-2:#8ab4ff;--shadow:0 12px 32px rgba(0,0,0,.22);--radius:18px;--max:1180px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b1020 0%,#0d1326 100%);color:var(--text)}
-    .container{max-width:var(--max);margin:0 auto;padding:24px}
-    .nav{position:sticky;top:0;z-index:5;background:rgba(11,16,32,.85);border-bottom:1px solid rgba(255,255,255,.08)}
-    .nav-inner{max-width:var(--max);margin:0 auto;padding:10px 24px;display:flex;gap:8px;flex-wrap:wrap}
-    .nav a{color:var(--text);text-decoration:none;font-size:13px;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
-    h1{margin:10px 0 6px;font-size:36px;letter-spacing:-.03em}
-    h2{margin:0;font-size:26px;letter-spacing:-.02em}
-    p{margin:6px 0;color:var(--muted);line-height:1.5}
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .card{background:#fff;color:#14213d;border-radius:16px;padding:16px;box-shadow:var(--shadow)}
-    .card.dark{background:#0f1730;color:var(--text);border:1px solid rgba(255,255,255,.08)}
-    .tag{display:inline-block;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:700;margin-bottom:6px}
-    .blue{background:rgba(59,130,246,.15);color:#2563eb}.green{background:rgba(16,185,129,.15);color:#059669}.amber{background:rgba(245,158,11,.18);color:#b45309}.red{background:rgba(239,68,68,.15);color:#b91c1c}
-    ul{margin:8px 0 0 16px} li{margin:6px 0}
-    section{padding:22px 0}
-    .table{width:100%;border-collapse:collapse;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden}
-    th,td{padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left}
-    th{font-size:12px;text-transform:uppercase;color:var(--muted)}
-    .footer{color:var(--muted);font-size:13px;margin-top:16px}
-    @media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr} h1{font-size:30px}}
+    :root{--bg:#0b1020;--card:#ffffff;--text:#e8ecf8;--muted:#aab4d3;--accent:#6ee7b7;--shadow:0 12px 32px rgba(0,0,0,.22);--max:1100px}
+    body{margin:0;font-family:Inter,system-ui;background:linear-gradient(180deg,#0b1020,#0d1326);color:var(--text)}
+    .container{max-width:var(--max);margin:auto;padding:24px}
+    h1{font-size:34px;margin:0 0 6px}
+    h2{font-size:24px;margin:20px 0 10px}
+    p{color:var(--muted)}
+    .grid{display:grid;gap:14px}
+    .g2{grid-template-columns:1fr 1fr}
+    .card{background:#fff;color:#111;border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+    .card.dark{background:#0f1730;color:#fff;border:1px solid rgba(255,255,255,.08)}
+    ul{margin:8px 0 0 16px}
+    li{margin:6px 0}
+    .tag{font-size:11px;font-weight:700;margin-bottom:6px;display:inline-block}
+    .table{width:100%;border-collapse:collapse;margin-top:10px}
+    th,td{padding:10px;border-bottom:1px solid #ddd;text-align:left}
+    th{font-size:12px;color:#888}
+    @media(max-width:800px){.g2{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <div class="nav"><div class="nav-inner">
-    <a href="#lectura">Lectura real</a>
-    <a href="#decisiones">Decisiones</a>
-    <a href="#show">Cena Show</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#kosher">Kosher</a>
-    <a href="#paid">Paid</a>
-    <a href="#todo">TO-DO</a>
-  </div></div>
+  <div class="container">
 
-  <main class="container">
-    <header>
-      <h1>Madero Tango · Plan operativo (sin humo)</h1>
-      <p>Base: reunión kickoff. Enfoque: decisiones + ejecución. Prioridad: ordenar y vender mejor, no “hacer marketing”.</p>
-    </header>
+    <h1>Madero Tango · Propuesta de Comunicación</h1>
+    <p>Objetivo: ordenar la comunicación, segmentar audiencias y mejorar la conversión directa sin afectar el canal de agencias.</p>
 
-    <section id="lectura">
-      <h2>1. Lectura real del negocio</h2>
-      <div class="grid-3">
-        <div class="card"><span class="tag blue">VENTA</span><ul>
-          <li>80% cena show via agencias (≈40% fee).</li>
-          <li>Directo existe, pero subdesarrollado.</li>
-          <li>WhatsApp = canal central (no CRM).</li>
-        </ul></div>
-        <div class="card"><span class="tag amber">MARKETING</span><ul>
-          <li>Cuentas y marcas desordenadas.</li>
-          <li>Pauta poco clara (herencia agencia anterior).</li>
-          <li>Contenido mezclado → baja claridad.</li>
-        </ul></div>
-        <div class="card"><span class="tag red">RIESGO</span><ul>
-          <li>Kosher sensible (religión + confianza).</li>
-          <li>Contenido actual puede expulsar.</li>
-          <li>Dependencia fuerte de terceros.</li>
-        </ul></div>
-      </div>
-    </section>
-
-    <section id="decisiones">
-      <h2>2. Decisiones (claras)</h2>
-      <div class="grid-2">
-        <div class="card dark"><ul>
-          <li>Separar comunicación por unidad (no mezclar).</li>
-          <li>Kosher debe aislarse progresivamente.</li>
-          <li>Mantener marca madre como respaldo.</li>
-          <li>No competir contra agencias → ampliar mercado.</li>
-        </ul></div>
-        <div class="card"><ul>
-          <li>Foco inmediato: Cena Show (volumen + margen).</li>
-          <li>Eventos = precisión (no volumen masivo).</li>
-          <li>Brasil = defender liderazgo.</li>
-          <li>Europa/Asia = crecimiento.</li>
-        </ul></div>
-      </div>
-    </section>
-
-    <section id="show">
-      <h2>3. Cena Show (core negocio)</h2>
-      <table class="table">
-        <tr><th>Problema</th><th>Acción</th></tr>
-        <tr><td>Dependencia agencias</td><td>Crear canal directo paralelo (web + WhatsApp)</td></tr>
-        <tr><td>Compra fácil en OTA</td><td>Mejorar UX y oferta directa</td></tr>
-        <tr><td>Poca diferenciación</td><td>Mostrar experiencia real (video + prueba social)</td></tr>
-      </table>
-      <p><b>Clave:</b> no sacar clientes a agencias → captar nuevos antes del viaje.</p>
-    </section>
-
-    <section id="eventos">
-      <h2>4. Eventos</h2>
-      <div class="grid-2">
-        <div class="card"><ul>
-          <li>Venta consultiva (no inmediata).</li>
-          <li>Necesita contenido de casos reales.</li>
-          <li>Segmentar: corporate / social / kosher.</li>
-        </ul></div>
-        <div class="card dark"><ul>
-          <li>No mezclar con Cena Show.</li>
-          <li>No comunicar todo junto.</li>
-          <li>Orden visual en redes (urgente).</li>
-        </ul></div>
-      </div>
-    </section>
-
-    <section id="kosher">
-      <h2>5. Kosher</h2>
-      <div class="grid-2">
-        <div class="card"><span class="tag red">HECHO</span><ul>
-          <li>Compra por confianza + comunidad.</li>
-          <li>WhatsApp y referidos dominan.</li>
-          <li>Restricciones culturales fuertes.</li>
-        </ul></div>
-        <div class="card"><span class="tag green">ACCIÓN</span><ul>
-          <li>Crear identidad separada (progresiva).</li>
-          <li>Contenido: rabino + validación.</li>
-          <li>NO mezclar con show (crítico).</li>
-        </ul></div>
-      </div>
-    </section>
-
-    <section id="paid">
-      <h2>6. Paid Media</h2>
-      <table class="table">
-        <tr><th>Canal</th><th>Uso</th></tr>
-        <tr><td>Google Ads</td><td>Captura directa (alta prioridad)</td></tr>
-        <tr><td>Meta</td><td>Awareness + remarketing</td></tr>
-        <tr><td>LinkedIn</td><td>Eventos (testear)</td></tr>
-        <tr><td>Facebook</td><td>Comunidades (Kosher)</td></tr>
-      </table>
-      <p><b>Urgente:</b> auditar qué está corriendo hoy.</p>
-    </section>
-
-    <section id="todo">
-      <h2>7. TO-DO (APB · concreto)</h2>
-      <div class="grid-2">
-        <div class="card dark">
-          <h3>Cliente</h3>
-          <ul>
-            <li>Dar accesos completos (Meta + Google Ads).</li>
-            <li>Compartir bases de WhatsApp.</li>
-            <li>Confirmar fechas clave (Brasil, feriados).</li>
-            <li>Coordinar días de filmación (antes fin de abril).</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Onlife</h3>
-          <ul>
-            <li>Auditoría de cuentas (24–48h).</li>
-            <li>Definir estructura de campañas.</li>
-            <li>Propuesta de separación de redes.</li>
-            <li>Plan de contenidos por unidad.</li>
-            <li>Plan de pauta inicial (con presupuesto).</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top:12px">
-        <h3>Contenido (prioridad alta)</h3>
+    <h2>1. Diagnóstico breve</h2>
+    <div class="grid g2">
+      <div class="card">
         <ul>
-          <li>Filmar: salones + cena show + backstage.</li>
-          <li>Generar piezas para China (deadline corto).</li>
-          <li>Actualizar banco visual completo.</li>
+          <li>Comunicación actual mezclada (eventos + kosher).</li>
+          <li>Falta de claridad para cada público.</li>
+          <li>Dependencia fuerte de intermediarios.</li>
         </ul>
       </div>
-    </section>
+      <div class="card dark">
+        <ul>
+          <li>WhatsApp es el canal principal.</li>
+          <li>Marca fuerte pero subutilizada.</li>
+          <li>Oportunidad en venta directa.</li>
+        </ul>
+      </div>
+    </div>
 
-    <div class="footer">Documento interno. Versión operativa basada en kickoff.</div>
-  </main>
+    <h2>2. Lineamiento general</h2>
+    <div class="card">
+      <ul>
+        <li>Separar audiencias para mejorar claridad.</li>
+        <li>Construir confianza donde sea necesario (ej: kosher).</li>
+        <li>Potenciar venta directa sin competir con agencias.</li>
+      </ul>
+    </div>
+
+    <h2>3. Instagram · Separación estratégica</h2>
+    <div class="card">
+      <p><b>Problema:</b> una sola cuenta con públicos distintos.</p>
+      <p><b>Resultado:</b> menor engagement y mensaje confuso.</p>
+
+      <h3>Fase 1 · Teaser</h3>
+      <ul>
+        <li>Comunicar evolución de la marca.</li>
+        <li>Ej: “Muy pronto cada experiencia tendrá su espacio”.</li>
+        <li>Stories con encuestas (interés kosher).</li>
+      </ul>
+
+      <h3>Fase 2 · Nueva cuenta</h3>
+      <ul>
+        <li>Crear Instagram específico de Kosher.</li>
+      </ul>
+
+      <h3>Fase 3 · Migración</h3>
+      <ul>
+        <li>Post colaborativos entre cuentas.</li>
+        <li>CTA claros en stories.</li>
+        <li>Incentivo (sorteo o beneficio).</li>
+      </ul>
+
+      <h3>Fase 4 · Contenido diferenciado</h3>
+      <ul>
+        <li>Kosher: confianza, comunidad, validación.</li>
+        <li>Eventos: casos, salones, soluciones.</li>
+      </ul>
+    </div>
+
+    <h2>4. Facebook y LinkedIn</h2>
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag">FACEBOOK</span>
+        <ul>
+          <li>Contenido cercano y masivo.</li>
+          <li>Álbumes reales de eventos.</li>
+          <li>Testimonios.</li>
+          <li>Historias humanas.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">LINKEDIN</span>
+        <ul>
+          <li>Posicionamiento corporativo.</li>
+          <li>Casos de empresas.</li>
+          <li>Backstage profesional.</li>
+          <li>Equipo humano.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>5. Cena Show (venta directa)</h2>
+    <table class="table">
+      <tr><th>Problema</th><th>Acción</th></tr>
+      <tr><td>Dependencia agencias</td><td>Canal directo (web + WhatsApp)</td></tr>
+      <tr><td>Poca diferenciación</td><td>Contenido real + reviews</td></tr>
+    </table>
+
+    <h2>6. Eventos</h2>
+    <div class="card">
+      <ul>
+        <li>Comunicación más profesional.</li>
+        <li>Mostrar casos reales.</li>
+        <li>Segmentar públicos.</li>
+      </ul>
+    </div>
+
+    <h2>7. Próximos pasos</h2>
+    <div class="grid g2">
+      <div class="card dark">
+        <ul>
+          <li>Ordenar cuentas y contenidos.</li>
+          <li>Crear cuenta Kosher.</li>
+          <li>Plan de contenidos por unidad.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul>
+          <li>Definir calendario.</li>
+          <li>Generar material audiovisual.</li>
+          <li>Activar estrategia progresiva.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
